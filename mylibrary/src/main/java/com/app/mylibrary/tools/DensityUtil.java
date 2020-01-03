@@ -41,6 +41,18 @@ public class DensityUtil {
         return (int) (pxValue / scale + 0.5f);
     }
 
+    /**
+     * px转sp
+     * @param context
+     * @param pxValue
+     * @return
+     */
+    public static int px2sp(Context context, float pxValue) {
+        final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int) (pxValue / fontScale + 0.5f);
+    }
+
+
 
     public static Point getViewMH(final View view) {
         final int[] mWidth = {0};

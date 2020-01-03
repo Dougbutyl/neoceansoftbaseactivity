@@ -21,4 +21,5 @@
         <attr name="storkeWidth" format="dimension" />
         <attr name="isShowResult" format="boolean" />
     </declare-styleable>
+
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--弱-->
+    <!--16px-->
+    <!--适用于标注文字，数量、评论数等-->
+    <dimen name="textsize_weaklevel1">8sp</dimen>
+    <!--// 22px-->
+    <!--适用于副文、标注文字，数量、评论数等-->
+    <dimen name="textsize_weaklevel2">11sp</dimen>
+    <!--一般-->
+    <!--// 24px-->
+    <!--适用于辅助文字、副文-->
+    <dimen name="textsize_generallevel1">12sp</dimen>
+    <!--// 26px-->
+    <!--适用于正文、副文-->
+    <dimen name="textsize_generallevel2">13sp</dimen>
+    <!--强-->
+    <!--//30px-->
+    <!--适用于主要功能名称、部分标题文字-->
+    <dimen name="textsize_importantlevel1">15sp</dimen>
+    <!--//32px-->
+    <!--适用于内容文字-->
+    <dimen name="textsize_importantlevel2">16sp</dimen>
+    <!--//34px-->
+    <!--适用于用户名称、部分标题文字-->
+    <dimen name="textsize_importantlevel3">17sp</dimen>
+    <!--// 36px-->
+    <!--适用于顶部导航栏目名称、首页大模块名称-->
+    <dimen name="textsize_importantlevel4">18sp</dimen>
+</resources>

@@ -1,7 +1,10 @@
 package com.app.mylibrary.view;
 
 import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
@@ -12,25 +15,39 @@ import com.app.mylibrary.tools.DensityUtil;
  * Date 2020/1/2
  */
 public class Titlebar extends RelativeLayout {
+    Context context;
     public Titlebar(Context context) {
         super(context);
-        setHeight(context);
+        this.context=context;
+
     }
 
     public Titlebar(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setHeight(context);
+        this.context=context;
     }
 
     public Titlebar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setHeight(context);
+
+        this.context=context;
     }
 
-    private void setHeight(Context context) {
-        ViewGroup.LayoutParams params = getLayoutParams();
-        params.height = 128 - DensityUtil.getBarHeight(context);
-        setLayoutParams(params);
+
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        setMeasuredDimension(getDefaultSize(0, widthMeasureSpec), getDefaultSize(0, heightMeasureSpec));
+        int childHeight = 88;//得到宽度
+        heightMeasureSpec = MeasureSpec
+                .makeMeasureSpec(childHeight, MeasureSpec.EXACTLY);
+
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+
+
+
     }
+
 
 }

@@ -2,8 +2,10 @@ package com.app.neoceansoftbaseactivity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.app.mylibrary.BaseActivity;
+import com.app.mylibrary.tools.DensityUtil;
 
 public class MainActivity extends BaseActivity {
 
@@ -11,6 +13,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initData() {
+
 
     }
 
@@ -21,7 +24,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected boolean isImmersion() {
-        return false;
+        return true;
     }
 
     @Override
@@ -36,7 +39,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected int setImmersionColor() {
-        return 0;
+        return android.R.color.holo_orange_dark;
     }
 
     @Override
