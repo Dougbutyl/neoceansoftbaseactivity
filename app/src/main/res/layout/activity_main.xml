@@ -19,6 +19,7 @@
             android:layout_centerInParent="true"
             android:gravity="center"
             android:textSize="36px"
+            android:textStyle="bold"
             android:text="标题"/>
     </com.app.mylibrary.view.Titlebar>
     <TextView
@@ -67,15 +68,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:textSize="@dimen/textsize_weaklevel2"
+        android:textSize="@dimen/textsize_weaklevel"
         android:gravity="center_vertical"
         android:text="适用于副文、标注文字，数量、评论数等"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:textSize="@dimen/textsize_weaklevel1"
-        android:gravity="center_vertical"
-        android:text="适用于标注文字，数量、评论数等"/>
+
 
 </LinearLayout>
