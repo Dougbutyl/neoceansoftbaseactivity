@@ -169,7 +169,7 @@ public abstract class BaseActivity extends SwipeBackActivity {
         overridePendingTransition(0, R.anim.translate_dialog_out);
     }
 
-    void changeStatusBarTextColor(boolean isBlack) {
+   public void changeStatusBarTextColor(boolean isBlack) {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
             if (isBlack) {
                 getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//设置状态栏黑色字体
